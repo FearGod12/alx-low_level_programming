@@ -1,2 +1,0 @@
-#!/bin/bash
-gcc -s $CFILE > $($CFILE::-2)".s"
