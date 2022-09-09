@@ -1,10 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
-/* variable int n has been declared	
-** *coding then assigns the random value.
-* about to enter the function which returns a value */
+/**
+* variable int n has been declared
+* coding then assigns the random value.
+* about to enter the function which returns a value
+*/
 int main(void)
 {
 	int n;
