@@ -1,15 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-/* betty style doc for function main goes there */
-/* about to enter the function which returns a value */
+
+/* variable int n has been declared	
+** *coding then assigns the random value.
+* about to enter the function which returns a value */
 int main(void)
 {
-/**
-* variable n has been declared
-*coding then assigns the random value.
-*/
 	int n;
 
 	srand(time(0));
