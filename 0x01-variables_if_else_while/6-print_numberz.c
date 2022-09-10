@@ -9,7 +9,8 @@
 * Description: Prints the numbers of base 10
 * only putchar is allowed
 * Return: 0 for success
-*/int main(void)
+*/
+int main(void)
 {
 	int num = 48;
 
