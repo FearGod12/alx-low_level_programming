@@ -3,14 +3,14 @@
 #include <time.h>
 
 /**
-* main - Prints hexadecimals 
+* main - Prints hexadecimals
 * @void: Empty parameter list for main.
 *
 * Description: Prints the numbers of base 10
 *Return: 0 for success
 */
 int main(void)
-{	
+{
 	char num = '0';
 
 	while (num <= '9')
@@ -18,9 +18,9 @@ int main(void)
 		putchar(num);
 		num++;
 	}
-	num = 'A';
+	num = 'a';
 
-	while (num < 'G')
+	while (num < 'g')
 	{
 		putchar(num);
 		num++;
