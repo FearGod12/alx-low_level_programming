@@ -7,7 +7,8 @@
 * Description: Prints the alphabet in lower case except e and q
 * Can only use putchar
 *Return: 0 for success
-*/int main(void)
+*/
+int main(void)
 {
 	char letter = 'a';
 
@@ -28,4 +29,4 @@
 	}
 	putchar('\n');
 	return (0);
-}	
+}

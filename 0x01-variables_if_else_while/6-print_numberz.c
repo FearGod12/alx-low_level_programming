@@ -9,7 +9,7 @@
 * Return: 0 for success
 */
 int main(void)
-{	char numb = 0;
+{	int numb = 0;
 
 	while (numb < 10)
 	{
