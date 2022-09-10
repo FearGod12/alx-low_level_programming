@@ -3,8 +3,9 @@
 /**
 * main: the main function of the program
 * void: empty parameter list for main
+*
 * Description: Prints the lower case alphabets fro a to z
-* return: 0 for succes
+* return:main function returns 0 for succes
 */
 int main(void)
 {	char alph = 'a';
