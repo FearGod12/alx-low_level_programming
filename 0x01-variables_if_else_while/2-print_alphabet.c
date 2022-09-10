@@ -1,11 +1,12 @@
 #include <stdio.h>
 
 /**
-* main: the main function of the program
-* void: empty parameter list for main
+* main - Prints alphabet
+* @void: Empty parameter list for main.
 *
-* Description: Prints the lower case alphabets fro a to z
-* return:main function returns 0 for succes
+* Description: Prints the alphabet in lower case
+* Can only use putchar
+*Return: 0 for success
 */
 int main(void)
 {	char alph = 'a';
