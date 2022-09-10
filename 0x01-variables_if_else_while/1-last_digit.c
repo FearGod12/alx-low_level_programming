@@ -4,7 +4,7 @@
 
 /*
 * int main- the main function of the program
-* void- it does not take any argument 
+* void- it does not take any argument
 * return- it has a value of 0
 */
 int main(void)
@@ -14,7 +14,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	m = n%10;
+	m = n % 10;
 	if (m > 5)
 		printf("Last digit of %d is %d and is greater than 5\n", n, m);
 	else if ((m < 6) && (m != 0))
