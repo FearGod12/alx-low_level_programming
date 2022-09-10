@@ -1,15 +1,17 @@
 #include <stdio.h>
 
-/*
+/**
 * main - Writes 00 - 99
 * @void: Empty parameter list for main.
 *
-* Description: Writes number 00-99
+* Description: Writes all unique combinations
+* of 2
 * Return: 0 for success
 */
 int main(void)
 {
 	int i, j;
+
 	for (i = '0'; i <= '9'; i++)
 	{
 		for (j = '0'; j <= '9'; j++)
