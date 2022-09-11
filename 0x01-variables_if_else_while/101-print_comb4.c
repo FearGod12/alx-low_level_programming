@@ -20,7 +20,7 @@ int main(void)
 			for (k = '0'; k <= '9'; k++)
 			{
 				if ((i < j) & (j < k) & (k <= '9'))
-				{putchar(i);
+				{	putchar(i);
 					putchar(j);
 					putchar(k);
 					if ((i + j + k) < 168)
