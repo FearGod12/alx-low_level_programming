@@ -23,9 +23,8 @@ void print_alphabet(void)
  * */
 void print_alphabet_x10(void)
 {
-        int n = 0;
-
-        while (n <= 9)
+	int n;
+	for (n = '0'; n <= '9'; n++)
 	{
 		print_alphabet();
 	}
