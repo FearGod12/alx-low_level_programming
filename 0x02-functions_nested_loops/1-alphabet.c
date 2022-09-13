@@ -1,8 +1,6 @@
-#include <unistd.h>
-#include <stdio.h>
+#include "main.h"
 
-/**
-* description: a function that prints the lower case alphabets
+/* description: a function that prints the lower case alphabets
 * @void: returns no value
 */
 void print_alphabet(void)
@@ -11,11 +9,7 @@ void print_alphabet(void)
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
-		write(1, &i, 1);
+		_putchar(i);
 	}
-	putchar('\n');
-}int main(void)
-{
-	print_alphabet();
-	return (0);
+	_putchar('\n');
 }
