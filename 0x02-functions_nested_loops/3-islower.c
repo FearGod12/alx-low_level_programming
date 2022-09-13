@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
-*
 * _islower - checks for lower case
 *
 * int: accepts integer values
@@ -10,7 +9,7 @@
 */
 int _islower(int c)
 {
-	if ((c >= 48) && (c <= 57))
+	if (c >= 48 && c <= 57)
 	{	return (1);
 	}
 	else
