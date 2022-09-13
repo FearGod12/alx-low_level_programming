@@ -3,6 +3,8 @@
 /**
 * _islower - checks for lower case
 *
+* int: returns an integer value
+*
 * @c: character to be checked if lower case, type int
 *
 * Returns: 1 if c is lowercase, Returns 0 otherwise
