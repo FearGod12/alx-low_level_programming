@@ -5,9 +5,7 @@
 *
 * @c: character to be checked if lower case, type int
 *
-* int: accepts integer values
-* return: Returns 1 if c is lowercase
-* Returns 0 otherwise
+* Returns: 1 if c is lowercase, Returns 0 otherwise
 */
 int _islower(int c)
 {
