@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_alphabet_x10 - prints 10 times the alphabets
+* print_alphabet - prints 10 times the alphabets
 *
 * @void: returns no value
 */
@@ -17,13 +17,13 @@ void print_alphabet(void)
 		_putchar('\n');
 }
 /**
- * * print_alphabet_x10 - prints 10 times the alphabets
- * *
- * * @void: returns no value
- * */
+* print_alphabet_x10 - prints 10 times the alphabets
+* @void: returns no value
+*/
 void print_alphabet_x10(void)
 {
 	int n;
+
 	for (n = '0'; n <= '9'; n++)
 	{
 		print_alphabet();
