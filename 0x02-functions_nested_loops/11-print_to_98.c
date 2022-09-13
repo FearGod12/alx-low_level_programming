@@ -4,7 +4,6 @@
 /**
 * print_to_98 - prints from number given to 98
 * @n: integer number passed by user
-* @void: has no return value
 */
 void print_to_98(int n)
 {
@@ -14,9 +13,9 @@ void print_to_98(int n)
 		{
 			printf("%d,", n);
 			putchar(' ');
-			n--;
 			if (n == 98)
 				printf("98");
+			n--;
 		}
 	}
 	else if (n < 98)
@@ -25,13 +24,14 @@ void print_to_98(int n)
 		{
 			printf("%d,", n);
 			putchar(' ');
-			n++;
 			if (n == 98)
 				printf("98");
+			n++;
 		}
 	}
 	else
 	{
 		printf("%d", n);
+		putchar(' ');
 	}
 }
