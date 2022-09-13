@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
 * main- prints _putchar
@@ -7,14 +7,6 @@
 */
 int main()
 {
-	putchar('_');
-	putchar('p');
-	putchar('u');
-	putchar('t');
-	putchar('c');
-	putchar('h');
-	putchar('a');
-	putchar('r');
-	putchar('\n');
+	write(1, "_putchar\n", 10);
 	return (0);
 }
