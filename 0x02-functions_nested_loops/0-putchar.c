@@ -1,9 +1,10 @@
 #include <unistd.h>
 
-/**
-* main- returns 0 for success
-* description: prints _putchar
-* return: returns 0 for success
+/** main - Prints _putchar
+* @void: Empty parameter list for main.
+* Description: Prints _putchar w/out stdio
+*
+* Return: 0 for success
 */
 int main(void)
 {
