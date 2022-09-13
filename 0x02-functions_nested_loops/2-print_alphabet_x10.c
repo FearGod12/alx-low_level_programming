@@ -4,7 +4,7 @@
 * print_alphabet - prints 10 times the alphabets
 *
 * @void: returns no value
-*/
+**/
 void print_alphabet(void)
 {
 	char i = 'a';
@@ -13,7 +13,7 @@ void print_alphabet(void)
 	{
 		_putchar(i);
 			i++;
-		}
+	}
 		_putchar('\n');
 }
 /**
