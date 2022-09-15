@@ -4,7 +4,7 @@
 * print_numbers - prints numbers 0 to 9
 * @void: does not accept a value
 */
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	int i;
 
