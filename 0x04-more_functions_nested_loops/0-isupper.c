@@ -7,9 +7,9 @@
 *
 * Return: 1 if lower case, 0 otherwise
 */
-int _islower(int c)
+int _isupper(int c)
 {
-	if (c >= 65 && c <= 90)
+	if (c >= 97 && c <= 122)
 	{	return (1);
 	}
 	else
