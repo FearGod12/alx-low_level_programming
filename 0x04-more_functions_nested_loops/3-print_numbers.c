@@ -3,7 +3,6 @@
 /**
 * print_numbers - prints numbers 0 to 9
 * @void: does not accept a value
-* Return: returns nothing for success
 */
 void print_numbers(void)
 {
