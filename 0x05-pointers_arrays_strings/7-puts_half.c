@@ -9,7 +9,7 @@ void puts_half(char *str)
 {
 	int i, j, max;
 
-	i = 0;
+	i = 1;
 	while (str[i] != '\0')
 	{
 		i++;
