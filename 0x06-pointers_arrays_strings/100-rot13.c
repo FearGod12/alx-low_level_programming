@@ -16,7 +16,10 @@ char *rot13(char *s)
 		for (j = 0; ch[j] != '\0'; j++)
 		{
 			if (s[i] == ch[j])
+			{
 			s[i] = rotch[j];
+			break;
+			}
 		}
 	}
 	return (s);
