@@ -19,4 +19,5 @@ char *rot13(char *s)
 			s[i] = rotch[j];
 		}
 	}
+	return (s);
 }
