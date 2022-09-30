@@ -9,26 +9,28 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
-	int result;
+	int res = 0;
+	int num = 0;
+	char *ptr = 0;
 
-	if (argc == 1)
+	if (argc < 2)
 	{
 		printf("0\n");
 		return (0);
 	}
-	for (i = 1; i < argc; i++)
+	++argv;
+	--argc;
+	while (argc--)
 	{
-		if (atoi(argv[i]) <= 0 || atoi(argv[i]) >= 9)
+		num = (int)strtol(*argv, &ptr, 10);
+		res = res + num;
+		if (*ptr != 0 || num < 0 || res < 0)
 		{
 			printf("Error\n");
 			return (1);
 		}
-		else
-		{
-			result += atoi(argv[i]);
-		}
+		++argv;
 	}
-	printf("%d\n", result);
+	printf("%d\n", res);
 	return (0);
 }
