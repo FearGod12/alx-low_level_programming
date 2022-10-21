@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * before_main - prints a message before the main program 
+ * before_main - prints a message before the main program
  * is executed
  */
 void before_main(void)
