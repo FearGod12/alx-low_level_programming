@@ -1,14 +1,14 @@
 0x14. C - Bit manipulation
 In this project, I learned about bit manipulation in C.
 
-Technologies
+
 C files are compiled using gcc 9.3.0
 C files are written according to the C90 standard
 Tested on Ubuntu 24.04 LTS
 Files
-All of the following files are scripts and programs written in C:
+All of the following files are functions and programs written in C:
 
-Filename	Description
+
 0-binary_to_uint.c	Converts a binary number to an unsigned int
 1-print_binary.c	Prints the binary representation of a number
 2-get_bit.c	Returns the value of a bit at a given index
@@ -18,7 +18,6 @@ Filename	Description
 100-get_endianness.c	Checks the endianness
 101-password	Script that contains the password of crackme3 file
 Tasks
-0. 0
 
 0-binary_to_uint.c: C function that converts a binary number to an unsigned int.
 The parameter b is a pointer to a string of 0 and 1 characters.
