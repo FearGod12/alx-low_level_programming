@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _exit - prints error messages and exits with exit value
+ * __exit - prints error messages and exits with exit value
  * @error: num is either exit value or file descriptor
  * @s: str is a name, either of the two filenames
  * @fd: file descriptor
@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 		__exit(97, NULL, 0);
 	/*sets file descriptor for copy-to file*/
-	fd2= open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
+	fd2 = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	if (fd2 == -1)
 		__exit(99, argv[2], 0);
 	/*sets file descriptor for copy-from file*/
