@@ -5,7 +5,7 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
-int main(int argc, char **argv[])
+int main(int argc, char *argv[])
 {	
 	pid_t pid;
 	int status, i = 1;
@@ -17,22 +17,22 @@ int main(int argc, char **argv[])
 	printf("$");
 	getline(&buff, &n, stdin);
 
-	char **tokens; //= malloc((sizeof((buff) + 1) * sizeof(char *)));
+	char *tokens[n + 1];// = malloc((sizeof(char *) * 1024));
 	if (!tokens)
 	{
 		perror("allocation error");
 		exit(EXIT_FAILURE);
 	}
-	token = strtok(buff, delim);
 	while(token != NULL)
 	{
+		token = strtok(buff, delim);
 		tokens[i] = token;
 		i++;
 	}
 	tokens[i] = NULL;
 	tokens[0] = "/bin/which";
 	execve(tokens[0], tokens, NULL);
-	free(token);
+	free(tokens);
 	free(buff);
 	return (0);
 }
