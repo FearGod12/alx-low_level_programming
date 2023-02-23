@@ -1,0 +1,15 @@
+CC = gcc
+SRC = $(wildcard *.c)
+# uses a substitution reference to automatically generate a list of object files from the list of source files in the SRC variable
+OBJ = $(SRC:.c=.o)
+NAME = school
+
+all : $(NAME)
+
+#$@ represents the target $(NAME) and $^ represents the list of dependencies
+$(NAME) : $(OBJ)
+	$(CC) -o $@ $^
+
+.PHONY : clean
+clean:
+	rm *.o
