@@ -4,14 +4,8 @@ SRC = $(wildcard *.c)
 OBJ = $(SRC:.c=.o)
 NAME = school
 
-all : $(NAME)
-
-#$@ represents the target $(NAME) and $^ represents the list of dependencies
-$(NAME) : $(OBJ)
-	$(CC) -o $@ $^
-
-%.o : %.c
-	$(CC) -c $^ -o $@
+all : $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 
 .PHONY : clean
 clean:
