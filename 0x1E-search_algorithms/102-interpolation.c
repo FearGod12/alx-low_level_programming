@@ -20,7 +20,7 @@ int interpolation_search(int *array, size_t size, int value)
 	{
 		printf("Value checked array[%lu] = [%d]\n", pos, array[pos]);
 		if (array[pos] == value)
-			return (pos);
+			return ((int) pos);
 		else if (array[pos] < value)
 			low = pos + 1;
 		else
