@@ -28,7 +28,7 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 		}
 
 		printf("Value checked at index [%lu] = [%d]\n", temp->index, temp->n);
-		if (temp->n == value)
+		if (temp->n == value || temp->n > value)
 			break;
 	}
 	if (note > 0)
