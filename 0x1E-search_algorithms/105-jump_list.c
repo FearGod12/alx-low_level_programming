@@ -6,7 +6,8 @@
  * @list: the list to be searched
  * @size: size of the list
  * @value: value being searched for
- * Return: pointer to the first node where value is located or NULL if not found
+ * Return: pointer to the first node where value is located
+ * or NULL if not found
  */
 listint_t *jump_list(listint_t *list, size_t size, int value)
 {
@@ -33,7 +34,8 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 			break;
 		}
 	}
-	printf("Value found between indexes [%lu] and [%lu]\n", prev->index, temp->index);
+	printf("Value found between indexes [%lu] and [%lu]\n", prev->index,
+			temp->index);
 	for (i = 1; i <= step; i++)
 	{
 		printf("Value checked at index [%lu] = [%d]\n", prev->index, prev->n);
