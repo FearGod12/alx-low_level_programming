@@ -10,13 +10,13 @@
  */
 int interpolation_search(int *array, size_t size, int value)
 {
-	size_t i = 0, high = size - 1, low = 0;
+	size_t high = size - 1, low = 0;
 	size_t pos = low + (((double)(high - low) / (array[high] -
 					array[low])) * (value - array[low]));
 	if (array == NULL)
 		return (-1);
 
-	while (pos < size && pos >= i)
+	while (pos < size && pos >= low)
 	{
 		printf("Value checked array[%lu] = [%d]\n", pos, array[pos]);
 		if (array[pos] == value)
